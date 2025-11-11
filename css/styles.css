@@ -13635,3 +13635,20 @@ a:hover {
   margin-right: 1rem;
 }
 
+
+/* Galerie de projets : carrousel compact et images non rognees */
+.carrousel-compact {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.carrousel-compact .carousel-inner {
+  background-color: #0b1220;
+  border-radius: 1.5rem;
+  padding: 1.5rem 0;
+}
+.image-carrousel {
+  max-height: 320px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
