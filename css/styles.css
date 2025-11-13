@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 :root {
   --bs-blue: #1e30f3;
@@ -637,7 +637,7 @@ progress {
 }
 
 .blockquote-footer::before {
-  content: " ";
+  content: "Â ";
 }
 
 .img-fluid {
@@ -13654,45 +13654,72 @@ a:hover {
 }
 
 
-/* Ajustements mobiles pour Competences et CV */
-@media (max-width: 767.98px) {
-  .banniere-cv,
+
+
+
+/* Responsive mobile : harmonisation des sections texte */
+@media (max-width: 575.98px) {
+  .banniere,
   .grille-competences,
   .competences-indicateurs,
-  .section-cv,
-  .resume-content {
+  .contact-banniere {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
 
-  .banniere-cv .container,
+  .banniere .container,
   .grille-competences .container,
   .competences-indicateurs .container,
-  .section-cv .container,
-  .resume-content .container {
+  .contact-banniere .container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 
+  .banniere .row {
+    text-align: center;
+  }
+
+  .banniere .d-sm-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .titre-banniere {
+    font-size: 2.2rem;
+    line-height: 1.25;
+  }
+
   .carte-mise-en-avant,
   .carte-competence,
-  .carte-cv,
-  .competence-carte,
   .panneau-contact {
     padding: 1.5rem;
   }
 
-  .titre-banniere {
-    font-size: 2.3rem;
-    line-height: 1.25;
-  }
-
-  .competences-indicateurs .progress {
-    height: 0.6rem;
-  }
-
   .grille-competences .row.g-4,
-  .competences-indicateurs .row.g-4 {
+  .competences-indicateurs .row.g-4,
+  .contact-banniere .row.g-4 {
     row-gap: 1.5rem;
   }
+
+  .ligne-contact {
+    align-items: flex-start;
+  }
+
+  .banniere-competences .d-flex.flex-wrap {
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .banniere-competences .d-flex.flex-wrap > div {
+    width: 100%;
+  }
+
+  .banniere-competences .skill-highlight-card {
+    margin-top: 2rem;
+  }
 }
+
+
+
