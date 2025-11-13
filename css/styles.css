@@ -13652,3 +13652,47 @@ a:hover {
   object-fit: contain;
   display: block;
 }
+
+
+/* Ajustements mobiles pour Competences et CV */
+@media (max-width: 767.98px) {
+  .banniere-cv,
+  .grille-competences,
+  .competences-indicateurs,
+  .section-cv,
+  .resume-content {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .banniere-cv .container,
+  .grille-competences .container,
+  .competences-indicateurs .container,
+  .section-cv .container,
+  .resume-content .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .carte-mise-en-avant,
+  .carte-competence,
+  .carte-cv,
+  .competence-carte,
+  .panneau-contact {
+    padding: 1.5rem;
+  }
+
+  .titre-banniere {
+    font-size: 2.3rem;
+    line-height: 1.25;
+  }
+
+  .competences-indicateurs .progress {
+    height: 0.6rem;
+  }
+
+  .grille-competences .row.g-4,
+  .competences-indicateurs .row.g-4 {
+    row-gap: 1.5rem;
+  }
+}
